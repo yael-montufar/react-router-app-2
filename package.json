@@ -1,0 +1,19 @@
+{
+  "name": "shopify-oauth-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@netlify/functions": "^2.0.0",
+    "@shopify/shopify-api": "^11.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "netlify-cli": "^17.0.0",
+    "typescript": "^5.6.3"
+  }
+} 

@@ -1,0 +1,23 @@
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+
+[dev]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/install"
+  status = 200
+  force = true
+  conditions = {Query = ["shop", "hmac"]}
+
+[[redirects]]
+  from = "/auth"
+  to = "/.netlify/functions/auth"
+  status = 200
+
+[[redirects]]
+  from = "/auth/callback"
+  to = "/.netlify/functions/auth-callback"
+  status = 200 
